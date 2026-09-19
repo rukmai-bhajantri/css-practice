@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: blue;
+        transition-property: background-color, width;
+        transition-duration: 1s;
+        transition-timing-function:ease;
+    }
+        .box2{
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color:green;
+        transition-property: background-color, width;
+        transition-duration: 1s;
+        transition-timing-function:ease;
+    }
+        .box3{
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color:blueviolet;
+        transition-property: background-color, width;
+        transition-duration: 1s;
+        transition-timing-function:ease;
+    }
+    .box1:hover{
+        background-color: red;
+        width:300px;
+    }
+    .box2:hover{
+        background-color:yellow;
+        width:400px;
+    }
+    .box3:hover{
+        background-color:aqua;
+        width:500px;
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
