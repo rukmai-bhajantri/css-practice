@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+        display: flex;
+        flex-wrap: nowrap;
+        /* align-content: center; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        align-content:flex-start;
+        gap:10px;
+        height: 500px
+    }
+    .card{
+        width: 200px;
+        height: 150px;
+        background-color: burlywood;
+        border: 2px solid black;
+        border-radius: 10px;
+        flex-basis: 100px;
+    }
+     .card:nth-last-child(2){
+        flex:3;
+    } 
+    .card:nth-last-child(1){
+    align-self: center;
+    } 
+    .card:first-child{
+    flex-shrink: 1;
+    }
+    .card:nth-last-child(2){
+    flex-shrink: 0;
+    }
+    .card:nth-last-child(2){
+        flex-grow: 2;
+    } 
+    .card:nth-child(1){
+    order: 3;
+    }
+     .card:nth-child(2){
+    order: 1;
+    }
+      .card:nth-child(3){
+    order: 2;
+    }
+    .card:nth-last-child(2){
+    background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="card">html</div>
+        <div class="card">Css</div>
+        <div class="card">javascript</div>
+       
+    </div>
+</body>
+</html>
