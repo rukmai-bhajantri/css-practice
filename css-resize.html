@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text {
+        width: 300px;
+        /* height: 150px; */
+        /* resize: both; */
+        /* resize: horizontal; */
+        resize: vertical;
+    }
+
+    .btn {
+        appearance: none;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 10px;
+        /* border: 2px solid gray; */
+        background-color: blue;
+        color: white;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .btn::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.4s;
+    }
+
+    .btn:hover::after {
+        width: 100%;
+        background-color: chartreuse;
+        color: white;
+    }
+    .btn span{
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+</style>
+
+<body>
+    <textarea placeholder="Type somting" class="text"></textarea>
+    <button class="btn"><span>Food Donor</span></button>
+</body>
+
+</html>
