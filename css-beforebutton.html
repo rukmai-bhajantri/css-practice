@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     /* .btn{
+        padding: 10px 20px;
+        background-color: blue;
+        position: relative;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .btn::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        left: 50%;
+        left: 0;
+        top:0;
+        background: green;
+        transition: 0.4s;
+    }
+    .btn:hover::after{
+        width: 100%;
+        left: 0;
+    }
+    .btn span{
+        position: relative;
+        z-index: 1;
+    }
+    .btn:hover span{
+        color:black;
+    }  */
+      .butn{
+        position: relative;
+        padding: 20px 30px;
+        background-color: blueviolet;
+        border-radius: 10px;
+        border: none;
+        overflow: hidden;
+        cursor: pointer;
+        border:2px solid black;
+      }
+      .butn::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0;
+        height:100%;
+        top:0;
+        background-color: white;
+        transition: 0.4s;
+
+      }
+      .butn:hover::after{
+        width: 100%;
+      }
+      .butn span{
+        position: relative;
+        z-index: 1;
+      }
+      .butn:hover span{
+        color: red;
+      }
+</style>
+<body>
+    <button class="butn"><span>Food NGO</span></button>
+    <!-- <button class="btn"><span>Food Donor</span></button> -->
+</body>
+</html>
