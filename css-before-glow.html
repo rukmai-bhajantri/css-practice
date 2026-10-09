@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        padding: 10px 20px;
+         background: #6c2bd9;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        color: white;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .btn::before{
+        content: "";
+        padding: 10px 20px;
+        position: absolute;
+        inset: -5px;
+        background-color: #a855f7;
+        border-radius: 10px;
+        opacity: 0;
+        transition: 0.4s;
+        z-index: -1;
+    }
+    .btn:hover::before{
+        opacity: 1;
+    }
+</style>
+<body>
+    <button class="btn">Food donor</button>
+</body>
+</html>
